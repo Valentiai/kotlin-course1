@@ -1,17 +1,50 @@
 package org.example
 
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
-
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
-}
+val name: String
+val date: LocalDate
+var location: String
+val budgetDetails: Int
+var participantsCount: Int
+val duration: Duration
+val supplierContacts: List<ContactInfo>
+var status: HackathonStatus
+val sponsors: List<String>
+val budget: Double
+var internetAccess: String
+val transportInfo: String
+var teamCount: Int
+val tasks: List<String>
+val evacuationPlan: String
+var availableEquipment: List<Equipment>
+var freeEquipment: List<Equipment>
+var mealSchedule: Map<String, String>
+val fallbackPlan: String
+val judges: List<String>
+val feedbackMethods: List<String>
+val privacyPolicy: String
+val privateFeedback: List<String>
+var currentTemperature: Float
+var networkPerformance: String
+var lightingLevel: Int
+var eventLog: MutableList<String>
+val medicalSupport: Boolean
+val securityPlans: String
+val registrationNumber: String
+val maxNoiseLevel: Int
+var noiseLevelIndicator: Boolean
+var eventFormat: EventFormat
+var freeSeats: Int
+val pressPlan: String
+val projectDetails: List<Project>
+var permitStatus: Boolean
+var exclusiveAccess: Boolean
+val partners: List<String>
+val eventReport: EventReport by lazy
+val prizePlan: String
+val emergencyContacts: List<ContactInfo>
+val specialConditions: String
+var participantMood: String
+val hackathonPlan: String
+val guestName: String
+val maxCapacity: Int
+val standardWorkHours: Int
