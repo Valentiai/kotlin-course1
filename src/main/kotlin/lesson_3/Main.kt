@@ -1,4 +1,4 @@
-package org.example
+package org.example.lesson_3
 
 val name: String
 val date: LocalDate
