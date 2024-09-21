@@ -1,0 +1,98 @@
+Задача №1:
+
+fun determineSeason(month: Int): String {
+    return when {
+        month !in 1..12 -> "Ошибка: Некорректный номер месяца"
+        month in listOf(12, 1, 2) -> "Зима"
+        month in 3..5 -> "Весна"
+        month in 6..8 -> "Лето"
+        else -> "Осень"
+    }
+}
+
+Задача №2:
+
+fun calculateDogAge(dogYears: Double): String {
+    return if (dogYears < 0) {
+        "Ошибка: Некорректный возраст собаки"
+    } else {
+        val humanYears = if (dogYears <= 2) {
+            dogYears * 10.5
+        } else {
+            2 * 10.5 + (dogYears - 2) * 4
+        }
+        humanYears.toString()
+    }
+}
+
+Задача №3:
+
+fun determineTransport(distance: Double): String {
+    return when {
+        distance < 0 -> "Ошибка: Некорректная длина маршрута"
+        distance <= 1 -> "пешком"
+        distance <= 5 -> "велосипед"
+        else -> "автотранспорт"
+    }
+}
+
+Задача №4:
+
+fun calculateBonusPoints(purchaseAmount: Double): String {
+    return if (purchaseAmount < 0) {
+        "Ошибка: Некорректная сумма покупки"
+    } else {
+        val points = if (purchaseAmount < 1000) {
+            (purchaseAmount / 100).toInt() * 2
+        } else {
+            (purchaseAmount / 100).toInt() * 5
+        }
+        points.toString()
+    }
+}
+
+Задача №5:
+
+fun determineFileType(extension: String): String {
+    return when (extension.toLowerCase()) {
+        "txt", "doc", "docx" -> "Текстовый документ"
+        "jpg", "png", "gif" -> "Изображение"
+        "xls", "xlsx", "csv" -> "Таблица"
+        else -> "Неизвестный тип"
+    }
+}
+
+Задача №6:
+
+fun convertTemperature(value: Double, unit: String): String {
+    return when (unit) {
+        "C" -> "${(value * 9/5) + 32} F"
+        "F" -> "${(value - 32) * 5/9} C"
+        else -> "Ошибка: Некорректная единица измерения"
+    }
+}
+
+
+Задача №7:
+
+fun recommendClothing(temperature: Double): String {
+    return when {
+        temperature < -30 -> "Не выходите из дома"
+        temperature < 0 -> "Куртка и шапка"
+        temperature <= 15 -> "Ветровка"
+        temperature <= 35 -> "Футболка и шорты"
+        else -> "Не выходите из дома"
+    }
+}
+
+
+Задача №8:
+
+fun chooseMovieCategory(age: Int): String {
+    return when {
+        age < 0 -> "Ошибка: Некорректный возраст"
+        age < 13 -> "Детские"
+        age < 18 -> "Подростковые"
+        else -> "18+"
+    }
+}

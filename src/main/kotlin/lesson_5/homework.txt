@@ -1,0 +1,76 @@
+(12 / 3 > 3) && (5 * 2 == 10): True and True = True
+(14 - 4 <= 10) || (6 / 2 != 3): True or False = True
+(9 + 1 == 10) && (8 % 2 == 0): True and True = True
+(7 - 2 < 5) || (4 * 3 != 12): False or False = False
+(18 / 6 >= 3) && (5 + 5 == 10): True and True = True
+(11 % 3 != 2) || (9 - 3 == 6): False or True = True
+(5 * 2 < 11) && (14 / 2 == 7): True and True = True
+(8 + 2 <= 10) || (7 % 2 != 1): True or False = True
+(16 / 4 > 3) && (3 + 4 == 7): True and True = True
+(10 % 2 == 0) || (5 - 3 != 1): True or True = True
+
+((4 * 3) < 13) && !(8 / 4 == 2) || (10 % 3 != 1): True and not True or False = False
+((14 - 5) > 8) || (9 / 3 == 3) && !(7 + 0 != 7): True or True and not False = True
+((2 + 3) <= 5) && (16 / 4 == 4) || !(6 % 2 == 0): True and True or not True = True
+((5 * 3) != 15) && !(10 / 2 > 4) || (4 + 4 == 8): False and not True or True = True
+((12 / 4) >= 3) || (7 % 2 != 1) && !(3 + 3 == 6): True or False and not True = True
+
+Задача №1:
+
+fun calculateIntensity(initialIntensity: Double, attenuationCoefficient: Double?): Double {
+    // If attenuationCoefficient is null, use the default value of 0.5
+    val coefficient = attenuationCoefficient ?: 0.5
+    return initialIntensity * coefficient
+}
+
+fun main() {
+    // Case with a known attenuation coefficient
+    val knownCoefficient = calculateIntensity(100.0, 0.7)
+    println("With known coefficient: $knownCoefficient")
+
+    // Case where attenuation coefficient is null (default value is used)
+    val defaultCoefficient = calculateIntensity(100.0, null)
+    println("With default coefficient: $defaultCoefficient")
+}
+
+
+Задача №2:
+
+fun calculateTotalCost(deliveryCost: Double, cargoValue: Double?): Double {
+    // Если стоимость груза не указана, берём стандартное значение $50
+    val value = cargoValue ?: 50.0
+    // Страховка составляет 0.5% от стоимости груза
+    val insurance = value * 0.005
+    // Общая стоимость доставки
+    return deliveryCost + insurance
+}
+
+fun main() {
+    // Пример с указанной стоимостью груза
+    val totalWithValue = calculateTotalCost(100.0, 200.0)
+    println("Total with cargo value: $$totalWithValue")
+
+    // Пример, когда стоимость груза не указана (используется стандартная)
+    val totalWithoutValue = calculateTotalCost(100.0, null)
+    println("Total with default cargo value: $$totalWithoutValue")
+}
+
+Задача №3:
+
+fun recordPressure(pressure: Double?) {
+    // Проверяем, передано ли значение давления
+    val recordedPressure = pressure ?: throw IllegalArgumentException("Ошибка: Показания атмосферного давления отсутствуют!")
+    println("Зарегистрированное атмосферное давление: $recordedPressure мм рт. ст.")
+}
+
+fun main() {
+    try {
+        // Пример с имеющимся значением давления
+        recordPressure(760.0)
+
+        // Пример с отсутствующим значением давления (выброс ошибки)
+        recordPressure(null)
+    } catch (e: IllegalArgumentException) {
+        println(e.message)
+    }
+}

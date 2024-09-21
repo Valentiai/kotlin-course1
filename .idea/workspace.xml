@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c77fc2d-8176-4022-afa8-e6735e53ca30" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lesson_4/homework.txt" afterDir="false" />
+    <list default="true" id="8c77fc2d-8176-4022-afa8-e6735e53ca30" name="Changes" comment="Second commit">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lesson_5/homework.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lesson_6/homework.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson_3/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Kotlin\kotlin-course\src\main\kotlin\lesson_3" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +89,8 @@
       <workItem from="1726436859032" duration="129000" />
       <workItem from="1726437063189" duration="51000" />
       <workItem from="1726509605446" duration="837000" />
-      <workItem from="1726514419259" duration="3749000" />
+      <workItem from="1726514419259" duration="4054000" />
+      <workItem from="1726946389037" duration="2587000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -126,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726524755336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Second commit">
+      <option name="closed" value="true" />
+      <created>1726525385545</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726525385545</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>
